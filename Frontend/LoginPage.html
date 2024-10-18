@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>用戶登入頁面</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 登入頁面 -->
+  <div class="login-container">
+    <div class="login-header">
+      <h1>登入</h1>
+    </div>
+    <form id="login-form" action="/login" method="POST">
+      <div class="input-container">
+        <label for="email-login">用戶名或電子郵件:</label>
+        <input type="text" id="email-login" name="email" placeholder="" required>
+      </div>
+
+      <div class="input-container">
+        <label for="password-login">密碼:</label>
+        <input type="password" id="password-login" name="password" required>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
+        <label for="keep-signed-in">保持登入狀態</label>
+      </div>
+
+      <button type="submit" class="login-button">登入</button>
+
+      <div class="forgot-container">
+        <a href="#">忘記密碼或用戶名？</a>
+      </div>
+    </form>
+
+    <div class="social-login-container">
+      <p>或通過以下方式登入</p>
+      <div class="social-buttons">
+        <button class="social-button twitter"><i class="fab fa-twitter"></i> Twitter</button>
+        <button class="social-button facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+        <button class="social-button google"><i class="fab fa-google"></i> Google</button>
+      </div>
+    </div>
+
+    <div class="signup-container">
+      <p>尚未註冊？<a href="#">立即註冊</a></p>
+    </div>
+  </div>
+</html>
+
+
